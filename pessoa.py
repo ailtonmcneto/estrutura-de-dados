@@ -1,7 +1,11 @@
-class pessoa:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+class Pessoa:
+  def __init__(self,nome):
+    self.nome = nome
 
-    def apresentar(self):
-        print(f"olá, meu nome é {self.nome} e tenho {self.idade} anos")
+
+  def cumprimentar(self):
+    print(f"Olá, {self.nome}")
+
+nome = input("Digite seu nome: ")
+Pessoa1 = Pessoa(nome)
+Pessoa1.cumprimentar()
