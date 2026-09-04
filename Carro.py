@@ -1,11 +1,13 @@
 class Carro:
-  def acelerar():
-    print("o carro está acelerando!")
-  
-  def frear():
-    print("o carro está freando!")
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+    def detalhes(self):
+        return f"Carro: {self.marca} {self.modelo} ({self.ano})"
 
 
-Carro.acelerar()
-
-Carro.frear()
+if __name__ == "__main__":
+    carro = Carro("Toyota", "Corolla", 2022)
+    print(carro.detalhes())
